@@ -1,0 +1,61 @@
+body {
+  font-size: 36px;
+}
+
+nav {
+  position: sticky;
+  top: 0px;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+  border: 1px solid #333;
+  /*오버플로가 머에여...*/
+  overflow: hidden;
+  width: 100%;
+  z-index: 100;
+  /*이자식 왜 안붙는 거에여...
+    a href=" ">
+    요러케 붙어야 하는데 */
+}
+
+li {
+  display: inline;
+  float: left;
+  /*border-right: 1px solid #e5e5e5;*/
+}
+
+/*
+li :last-child {
+    border-right: none;
+}
+*/
+
+a {
+  /*블락은 왜 넣는 거에여...*/
+  display: block;
+  color: #333;
+  font-size: 14px;
+  padding: 24px 16px;
+  text-decoration: none;
+}
+
+li a :hover {
+  background-color: #333;
+  color: #fff;
+}
+
+.active {
+  background-color: #333;
+  color: #fff;
+}
+
+.test {
+  color: green;
+  height: 300px;
+  overflow-y: hidden;
+  overflow-x: scroll;
+}
